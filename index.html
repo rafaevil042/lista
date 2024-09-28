@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Casa do Dentista</h1>
+        <h2>Escolha seus produtos</h2>
+        <input type="text" id="search-input" placeholder="Buscar produtos..." class="search-bar">
+        <form id="product-form">
+            <div class="product-list" id="product-list">
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="cureta-5-6">
+                    <label for="cureta-5-6">Cureta Gracey 5-6 - R$ 10,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="cureta-7-8">
+                    <label for="cureta-7-8">Cureta Gracey 7-8 - R$ 15,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="cureta-11-12">
+                    <label for="cureta-11-12">Cureta Gracey 11-12 - R$ 20,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="cureta-13-14">
+                    <label for="cureta-13-14">Cureta Gracey 13-14 - R$ 10,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="pedra-afiadora">
+                    <label for="pedra-afiadora">Pedra de Afiar Média - R$ 15,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="perfurador">
+                    <label for="perfurador">Perfurador de Acrílico AINSWORTH - R$ 20,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="pinca-palmer">
+                    <label for="pinca-palmer">Pinça Porta-Grampo PALMER - R$ 10,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="arco-young">
+                    <label for="arco-young">Arco de YOUNG - R$ 15,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="brunidor">
+                    <label for="brunidor">Brunidor n.29 - R$ 20,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="espelho-5">
+                    <label for="espelho-5">Espelho n. 5 - R$ 10,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="sonda-5">
+                    <label for="sonda-5">Sonda Exploradora n. 5 - R$ 15,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+                <div class="product-item">
+                    <input type="checkbox" class="product-checkbox" id="espátula-24">
+                    <label for="espátula-24">Espátula nº24 - R$ 20,00</label>
+                    <input type="number" class="product-quantity" value="1" min="1">
+                </div>
+            </div>
+
+            <!-- Mostra o preço total -->
+            <div class="total">
+                <strong>Total: R$ <span id="total-price">0,00</span></strong>
+            </div>
+
+            <!-- Botão para enviar a lista via WhatsApp -->
+            <button type="submit">Enviar via WhatsApp</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
